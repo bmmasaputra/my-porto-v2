@@ -1,0 +1,565 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #22252E;
+    color: white;
+    font-family: "Quicksand", sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 17px;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h5, th, .cv-button {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+h6, td {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+    margin: 0;
+}
+
+th {
+    text-align: left;
+}
+
+header {
+    width: 100%;
+    height: 100vh !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    width: 100vw;
+    padding: 0 156px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position: fixed;
+    height: 80px;
+    top: 0;
+}
+
+.scrolled {
+    background-color: rgba(15, 23, 42, .5);
+    backdrop-filter: blur(4px);
+}
+
+ul {
+    list-style-type: none;
+    gap: 45px;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    transition: all ease-out .2s;
+}
+
+.active,
+li a:hover {
+    color: white;
+}
+
+.jumbotron {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    gap: 101px;
+}
+
+.jumbotron div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.jumbotron div p {
+    margin: 0;
+    max-width: 600px;
+}
+
+.jumbotron div p:first-child {
+    font-size: 48px;
+    font-weight: 600;
+    color: #868992;
+    
+}
+
+.jumbotron div p:nth-child(2) {
+    font-size: 64px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.jumbotron div p:last-child {
+    font-size: 36px;
+    font-weight: 400;
+    color: #868992;
+}
+
+.jumbotron img {
+    width: 513px;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    gap: 54px;
+    margin-bottom: 73px;
+}
+
+.about-left {
+    width: 857px;
+}
+
+#tech {
+    margin-top: 47px;
+}
+
+#tech ul li {
+    margin-bottom: 30px;
+}
+
+.tech-logo img {
+    margin-right: 32px;
+    height: 42px;
+}
+
+aside {
+    padding: 29px 45px;
+    border: 2px solid #4A4D56;
+    border-radius: 14px;
+    box-shadow: 0 0px 7px 0 rgba(255, 255, 255, .25);
+}
+
+figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figure img {
+    width: 100%;
+}
+
+table {
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+th, td {
+    padding-bottom: 15px;
+}
+
+th {
+    padding-right: 10px;
+}
+
+a {
+    color: white;
+}
+
+button {
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+}
+
+button h5 {
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #22252E;
+    background-color: #D6D9E2;
+}
+
+#projects {
+    background-color: #D6D9E2;
+    width: 100%;
+    color: #0E1110;
+    padding-bottom: 69px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.project-card {
+    box-shadow: 0 0 7px 0px rgba(0, 0, 0, .5);
+    background-color: #22252E;
+    border-radius: 10px;
+}
+
+.project-card img {
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+.card-tittle {
+    width: 100%;
+    padding: 22px 32px;
+}
+
+.card-tittle h4 {
+    margin: 0;
+    color: white;
+}
+
+.name-email {
+    display: flex;
+    gap: 20px;
+}
+
+#contact {
+    width: 100%;
+    padding-bottom: 69px;
+}
+
+form {
+    margin: 0 auto;
+    width: 50%;
+}
+
+input, textarea {
+    width: 100%;
+    border-radius: 10px;
+    border:  2px solid rgb(214, 214, 214);
+    padding: 6px 12px;
+    outline: none;
+    font-size: 15px;
+    font-family: "Quicksand", sans-serif;
+    margin-bottom: 20px;
+}
+
+input {
+    height: 40px;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+button {
+    background-color: #D6D9E2;
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #22252E;
+    transition: all ease-out .2s;
+    cursor: pointer;
+}
+
+button:hover, 
+input:active,
+textarea:active {
+    transform: rotate(1deg);
+    outline: none;
+}
+
+footer {
+    width: 100%;
+    background-color: #0E1110;
+    padding: 37px;
+    display: flex;
+    justify-content: center;
+}
+
+footer h6 {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1641px) {
+    .jumbotron {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+    
+    .jumbotron div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .jumbotron div p {
+        margin: 0;
+        max-width: 600px;
+    }
+    
+    .jumbotron div p:first-child {
+        font-size: 36px;
+        font-weight: 600;
+        color: #868992;
+        
+    }
+    
+    .jumbotron div p:nth-child(2) {
+        font-size: 48px;
+        font-weight: 600;
+        margin-bottom: 18px;
+    }
+    
+    .jumbotron div p:last-child {
+        font-size: 28px;
+        font-weight: 400;
+        color: #868992;
+    }
+
+    .jumbotron img {
+        width: 413px;
+    }
+    
+}
+
+@media screen and (max-width: 1158px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 1074px) {
+    .jumbotron {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .jumbotron div p:first-child {
+        font-size: 28px;
+        font-weight: 600;
+        color: #868992;
+        
+    }
+    
+    .jumbotron div p:nth-child(2) {
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 7px;
+    }
+    
+    .jumbotron div p:last-child {
+        font-size: 24px;
+        font-weight: 400;
+        color: #868992;
+    }
+
+    .jumbotron img {
+        width: 413px;
+    }
+
+    /* Mobile nav */
+    nav {
+        position: fixed;
+        padding: 0px 20px 20px 20px;
+    }
+    
+    .hamburger {
+        width: 50px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        margin: 20px;
+        padding: 10px 10px;
+        background-color: rgba(15, 23, 42, .5);
+        backdrop-filter: blur(4px);
+        border-radius: 10px;
+    }
+    
+    .line {
+        width: 100%;
+        height: 4px;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .side-menu {
+        width: 250px;
+        height: 100vh;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        left: -250px;
+        transition: 0.3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav-link {
+        padding: 10px 0;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    
+    .nav-link:hover {
+        background-color: #575757;
+        width: 100%;
+        text-align: center;
+    }
+
+    .active {
+        font-weight: 600;
+    }
+
+    /* Aside jadi di bawah about */
+    #about {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 54px;
+        margin-bottom: 73px;
+    }
+    
+    .about-left {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .jumbotron {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        gap: 101px;
+    }
+
+    #about {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        gap: 54px;
+        margin-bottom: 73px;
+    }
+    
+    form {
+        margin: 0 auto;
+        width: 90%;
+        background-color: black;
+    }
+
+    
+    .project-card {
+        box-shadow: 0 0 7px 0px rgba(0, 0, 0, .5);
+        background-color: #22252E;
+        border-radius: 10px;
+    }
+
+    .project-card img {
+        width: 350px;
+        border-top-left-radius: 14px;
+        border-top-right-radius: 14px;
+    }
+    
+    .card-tittle {
+        width: 100%;
+        padding: 22px 32px;
+    }
+    
+    footer h6 {
+        font-size: 12px;
+    }
+
+    .tech-logo img {
+        height: 36px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 431px) {
+    .jumbotron img {
+        width: 313px;
+    }
+
+    .jumbotron div p:first-child {
+        font-size: 24px;
+        font-weight: 600;
+        color: #868992;
+        
+    }
+    
+    .jumbotron div p:nth-child(2) {
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 7px;
+    }
+    
+    .jumbotron div p:last-child {
+        font-size: 20px;
+        font-weight: 400;
+        color: #868992;
+    }
+}
